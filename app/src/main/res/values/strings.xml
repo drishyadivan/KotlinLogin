@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">LoginDemo</string>
+    <string name="speech_prompt" translatable="false">Say something&#8230;</string>
+    <string name="speech_not_supported" translatable="false">Sorry! Your device doesn\'t support speech input</string>
+    <!--Login-->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="remember_login">Remember Login?</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="travel">TRAVEL</string>
+    <string name="safely">SAFELY</string>
+    <string name="register">REGISTER</string>
+    <string name="email_mandatory">Please enter email address.</string>
+    <string name="password_mandatory">Please enter password.</string>
+    <string name="unable_to_login_try_later">Unable to login. Please try again later.</string>
+    <string name="incorrect_email_or_password">Please enter a valid email address and password.</string>
+
+
+
+    <!-- URLS -->
+    <string name="base_url_live" translatable="false">https://api.travelsafelyapp.com:92/</string>
+    <string name="base_url_dev" translatable="false"> https://dev.travelsafelyapp.com:92/</string>
+    <string name="register_url_live" translatable="false">https://register.travelsafelyapp.com/</string>
+    <string name="forgot_password_url_live" translatable="false">https://forgotpassword.travelsafelyapp.com/</string>
+
+    <!--Alert Dialogs-->
+    <string name="ok">OK</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="connect">Connect</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="add">Add</string>
+
+    <!--Error Messages-->
+    <string name="E400">Bad Request. Missing or malformed URL Parameters.</string>
+    <string name="E401">Invalid Request.</string>
+    <string name="E404">File not found.</string>
+    <string name="E500">Internal server Error.</string>
+    <string name="EDEF">Unknown Error.</string>
+
+    <!--No Internet-->
+    <string name="not_connected_to_internet">No Internet Connection</string>
+
+    <!--GPS-->
+    <string name="enable_gps">Enable GPS?</string>
+    <string name="gps_seemed_to_be_disabled">Your GPS seems to be disabled, application require GPS to be connected.</string>
+    <string name="high_accuracy_gps_required">Please select high accuracy mode in your GPS settings to proceed further.</string>
+    <string name="location_turned_off">Location Services turned off.</string>
+    <string name="enable_location">Location permission is disabled, in order to use the application you need to enable location permission</string>
+    <string name="enable_storage">Access permission for Storage is disabled, in order to use the Drive Mode feature you need to enable permission to access Device Storage, so that debug users can log the Location Data while driveMode is enabled.</string>
+    <string name="enable">Enable</string>
+    <string name="current_gps">You may update DemoMode GPS Coordinates</string>
+    <string name="change_gps">Please enter DemoMode GPS Coordinates</string>
+
+    <string name="are_you_sure_you_want_to_exit_app">Are you sure you want to exit App?</string>
+    <string name="version_code">Build</string>
+    <string name="version_name">Version</string>
+    <string name="green">Green</string>
+
+    <string name="loginTimeout">"Log-in timed out. Please check your internet connection."</string>
+    <string name="connectionInterrupted">"Your Internet Connection might have been interrupted. Please check."</string>
+
+    <string name="add_comment">Add Comment</string>
+
+
+</resources>

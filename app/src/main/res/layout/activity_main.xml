@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.appinfo.logindemo.ui.auth.AuthViewModel" />
+    </data>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context="com.appinfo.logindemo.ui.home.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ts_logo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/spacing_10"
+        android:scaleType="center"
+
+        app:layout_constraintDimensionRatio="1:.10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        android:onClick="@{viewmodel::onBtnLogoutClick}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_login_selector"
+        android:fontFamily="@font/museosansrounded_700"
+        android:text="LOGOUT"
+        android:textColor="@drawable/btn_text_selector"
+        android:textSize="@dimen/textSizeSmall_14"
+         />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

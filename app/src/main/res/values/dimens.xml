@@ -1,0 +1,48 @@
+<resources>
+
+    <!--Text Sizes to be used throughout the app -->
+    <dimen name="textSizeXSmall_12">12sp</dimen>
+    <dimen name="textSizeSmall_14">14sp</dimen>
+    <dimen name="textSize_16">16sp</dimen>
+    <dimen name="textSizeMedium_18">18sp</dimen>
+    <dimen name="textSizeLarge_22">22sp</dimen>
+    <dimen name="textSizeXLarge_28">28sp</dimen>
+    <dimen name="logoutTextSize">14sp</dimen>
+
+    <!--button default dimensions -->
+    <dimen name="defaultButtonHeight">36dp</dimen>
+    <dimen name="defaultButtonElevation">2dp</dimen>
+    <dimen name="dialogMarginBetweenButtons">8dp</dimen>
+    <dimen name="defaultDialogMargin">24dp</dimen>
+
+    <!--bottom DOCK dimensions -->
+    <dimen name="defaultDockHeight">72dp</dimen>
+    <dimen name="DockCenterElementHeight">62dp</dimen>
+    <dimen name="DockOtherElementHeight">50dp</dimen>
+
+    <!--light signal image dimensions -->
+    <dimen name="signalArrowWidth">77dp</dimen>
+    <dimen name="signalArrowHeight">178dp</dimen>
+
+    <dimen name="connection_state_height">28.8dp</dimen>
+    <dimen name="connection_state_width">35.2dp</dimen>
+
+    <dimen name="spacing_10">10dp</dimen>
+    <dimen name="spacing_12">12dp</dimen>
+    <dimen name="spacing_20">20dp</dimen>
+    <dimen name="spacing_15">15dp</dimen>
+    <dimen name="spacing_5">5dp</dimen>
+
+    <!--stroke width to be used for any drawable -->
+    <dimen name="spacing_2">2dp</dimen>
+
+    <!--maximum margin -->
+    <dimen name="spacing_50">50dp</dimen>
+    <dimen name="spacing_1">1dp</dimen>
+
+    <!--alert image -->
+    <dimen name="iconHeightWidth">108dp</dimen>
+    <dimen name="iconHeightHeight">96dp</dimen>
+    <dimen name="scrollViewMargin">100dp</dimen>
+
+</resources>

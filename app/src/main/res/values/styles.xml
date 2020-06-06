@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/grey_app</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <!-- Switch theme -->
+    <style name="MySwitch" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">@color/green</item>\
+        <item name="colorAccent">@color/grey_app</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/off_white_app</item>
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/grey_app</item>
+    </style>
+
+    <!-- Dialog theme -->
+    <style name="MyDialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/grey_app</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.appinfo.logindemo.ui.auth.AuthViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background"
+        android:padding="@dimen/spacing_20">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ts_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_50"
+            android:autofillHints="@string/email"
+            android:background="@drawable/ic_edittext_background"
+            android:fontFamily="@font/museosansrounded_500"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:padding="@dimen/spacing_15"
+            android:text="@={viewmodel.email}"
+            android:textColor="@color/grey_app"
+            android:textSize="@dimen/textSizeSmall_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ts_logo"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:autofillHints="@string/password"
+            android:background="@drawable/ic_edittext_background"
+            android:fontFamily="@font/museosansrounded_500"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:padding="@dimen/spacing_15"
+            android:text="@={viewmodel.password}"
+            android:textColor="@color/grey_app"
+            android:textSize="@dimen/textSizeSmall_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtEmail"
+            tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:background="@drawable/btn_login_selector"
+            android:fontFamily="@font/museosansrounded_700"
+            android:onClick="@{viewmodel::onBtnLoginClick}"
+            android:text="@string/login"
+            android:textColor="@drawable/btn_text_selector"
+            android:textSize="@dimen/textSizeSmall_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtPassword" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_rem_forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin">
+
+            <CheckBox
+                android:id="@+id/checkboxRemember"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+
+                android:fontFamily="@font/museosansrounded_500"
+                android:gravity="left|center"
+                android:padding="@dimen/spacing_10"
+                android:text="@string/remember_login"
+                android:textColor="@color/grey_app"
+                app:buttonTint="#C2CAD0"
+                app:layout_constraintEnd_toStartOf="@id/txtfrgtpass"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txtfrgtpass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/museosansrounded_500"
+                android:gravity="right|center"
+                android:padding="@dimen/spacing_10"
+                android:text="@string/forgot_password"
+                android:textColor="@color/grey_app"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/checkboxRemember"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlHardcoded" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/spacing_50"
+            android:background="@drawable/btn_register_selector"
+            android:fontFamily="@font/museosansrounded_700"
+            android:text="@string/register"
+            android:textColor="@drawable/btn_text_selector"
+            android:textSize="@dimen/textSizeSmall_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_rem_forgot" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_gradient_black_opaque"
+    android:padding="@dimen/spacing_20">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_dialog_bg"
+        android:paddingLeft="@dimen/defaultDialogMargin"
+        android:paddingTop="@dimen/defaultDialogMargin"
+        android:paddingRight="@dimen/defaultDialogMargin"
+        android:paddingBottom="@dimen/dialogMarginBetweenButtons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/alert_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/museosansrounded_700"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSizeMedium_18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/alert_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/defaultDialogMargin"
+            android:fontFamily="@font/museosansrounded_500"
+            android:textColor="@color/grey_app"
+            android:textSize="@dimen/textSizeSmall_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/alert_header" />
+
+        <Button
+            android:id="@+id/alert_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/defaultButtonHeight"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/museosansrounded_700"
+            android:minWidth="88dp"
+            android:text="@string/cancel"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textSizeSmall_14"
+            app:layout_constraintBottom_toBottomOf="@id/alert_ok"
+            app:layout_constraintEnd_toStartOf="@id/alert_ok"
+            app:layout_constraintTop_toTopOf="@id/alert_ok"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/alert_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/defaultButtonHeight"
+            android:layout_marginTop="@dimen/defaultDialogMargin"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/museosansrounded_700"
+            android:minWidth="88dp"
+            android:text="@string/ok"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textSizeSmall_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/alert_message"
+            tools:ignore="ButtonStyle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
